@@ -120,7 +120,7 @@ def main_page():    # if os.path.isfile('config.ini') or os.path.isfile('../conf
         }
 
         .title {
-            font-size: 60px;
+            font-size: 40px;
         }
 
         .subtitle {
