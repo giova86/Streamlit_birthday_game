@@ -154,14 +154,14 @@ def main_page():    # if os.path.isfile('config.ini') or os.path.isfile('../conf
     # with c1:
     yt_download_button = st.button("Sblocca Regalo", key='download_button_youtube', use_container_width=True)
 
-    if yt_download_button and secret_code == '294':
+    if yt_download_button and secret_code == '263':
         st.session_state.page = "new_page"
         st.rerun()
         st.balloons()
         st.info('Auguriiiiiiii 🎉🎉🎉🎉🎉🎉🎉🎉!')
 
 
-    elif secret_code != '294' and yt_download_button:
+    elif secret_code != '263' and yt_download_button:
         st.toast("⚠️ Ritenta sarai più fortunata")
         # Pulsante per simulare un errore
         st.snow()
