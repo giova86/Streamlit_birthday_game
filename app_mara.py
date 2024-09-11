@@ -167,7 +167,7 @@ def main_page():    # if os.path.isfile('config.ini') or os.path.isfile('../conf
         st.info('Auguriiiiiiii 🎉🎉🎉🎉🎉🎉🎉🎉!')
 
 
-    else:
+    elif yt_download_button and (secret_code1 != '2' or secret_code2 != '6' or  secret_code3 != '3'):
         st.toast("⚠️ Ritenta sarai più fortunata")
         # Pulsante per simulare un errore
         st.snow()
