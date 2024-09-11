@@ -148,20 +148,26 @@ def main_page():    # if os.path.isfile('config.ini') or os.path.isfile('../conf
     # Inserire il titolo centrato
     st.markdown('<h1 class="centered-title title">🎉️ I regali vanno sudati 🎉️</h1><h3 class="centered-title subtitle">- Trova il codice segreto per sbloccare il regalo -</h3>', unsafe_allow_html=True)
 
-    secret_code = st.text_input("Codice Super Segretissimo")
+    c1, c2, c3 = st.columns(3)
+    with c1:
+        secret_code1 = st.text_input("Prima Prova")
+    with c2:
+        secret_code2 = st.text_input("Seconda Prova")
+    with c3:
+        secret_code3 = st.text_input("Terza Prova")
 
     # c1, c2 = st.columns(2)
     # with c1:
     yt_download_button = st.button("Sblocca Regalo", key='download_button_youtube', use_container_width=True)
 
-    if yt_download_button and secret_code == '263':
+    if yt_download_button and secret_code1 == '2' and secret_code2 == '6' and  secret_code3 == '3':
         st.session_state.page = "new_page"
         st.rerun()
         st.balloons()
         st.info('Auguriiiiiiii 🎉🎉🎉🎉🎉🎉🎉🎉!')
 
 
-    elif secret_code != '263' and yt_download_button:
+    else:
         st.toast("⚠️ Ritenta sarai più fortunata")
         # Pulsante per simulare un errore
         st.snow()
