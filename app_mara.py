@@ -146,7 +146,7 @@ def main_page():    # if os.path.isfile('config.ini') or os.path.isfile('../conf
     )
 
     # Inserire il titolo centrato
-    st.markdown('<h1 class="centered-title title">🎉️ I regali vanno sudati 🎉️</h1><h3 class="centered-title subtitle">- Trova il codice segreto per sbloccare il regalo -</h3>', unsafe_allow_html=True)
+    st.markdown('<h2 class="centered-title title">🎉️ Cara Mara, i regali vanno sudati 🎉️</h2><h3 class="centered-title subtitle">- Trova il codice segreto per sbloccare il regalo -</h3>', unsafe_allow_html=True)
 
     c1, c2, c3 = st.columns(3)
     with c1:
