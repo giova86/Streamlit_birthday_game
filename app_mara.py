@@ -82,9 +82,9 @@ def winner_page():
         }
 
         @keyframes led {
-            0% { color: #fff; text-shadow: 0 0 5px #287233, 0 0 10px #287233, 0 0 20px #287233, 0 0 40px #287233; }
-            50% { color: #fff; text-shadow: 0 0 10px #287233, 0 0 30px #287233, 0 0 30px #287233, 0 0 60px #287233; }
-            100% { color: #fff; text-shadow: 0 0 5px #287233, 0 0 10px #287233, 0 0 20px #287233, 0 0 40px #287233; }
+            0% { color: #fff; text-shadow: 0 0 5px #CC2936, 0 0 10px #CC2936, 0 0 20px #CC2936, 0 0 40px #CC2936; }
+            50% { color: #fff; text-shadow: 0 0 10px #CC2936, 0 0 30px #CC2936, 0 0 30px #CC2936, 0 0 60px #CC2936; }
+            100% { color: #fff; text-shadow: 0 0 5px #CC2936, 0 0 10px #CC2936, 0 0 20px #CC2936, 0 0 40px #CC2936; }
         }
 
         </style>
@@ -143,9 +143,9 @@ def main_page():    # if os.path.isfile('config.ini') or os.path.isfile('../conf
         }
 
         @keyframes led {
-            0% { color: #fff; text-shadow: 0 0 5px #287233, 0 0 10px #287233, 0 0 20px #287233, 0 0 40px #287233; }
-            50% { color: #fff; text-shadow: 0 0 10px #287233, 0 0 30px #287233, 0 0 30px #287233, 0 0 60px #287233; }
-            100% { color: #fff; text-shadow: 0 0 5px #287233, 0 0 10px #287233, 0 0 20px #287233, 0 0 40px #287233; }
+            0% { color: #fff; text-shadow: 0 0 5px #CC2936, 0 0 10px #CC2936, 0 0 20px #CC2936, 0 0 40px #CC2936; }
+            50% { color: #fff; text-shadow: 0 0 10px #CC2936, 0 0 30px #CC2936, 0 0 30px #CC2936, 0 0 60px #CC2936; }
+            100% { color: #fff; text-shadow: 0 0 5px #CC2936, 0 0 10px #CC2936, 0 0 20px #CC2936, 0 0 40px #CC2936; }
         }
 
         .stDownloadButton {
