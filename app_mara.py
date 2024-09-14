@@ -19,6 +19,14 @@ if "page" not in st.session_state:
 
 
 
+# Funzione per leggere il contenuto del file PDF
+def get_pdf_file():
+    with open("static/compleanno.pdf", "rb") as f:
+        return f.read()
+
+pdf_data = get_pdf_file()
+
+
 def set_page_width():
     st.markdown(
         """
@@ -140,6 +148,10 @@ def main_page():    # if os.path.isfile('config.ini') or os.path.isfile('../conf
             100% { color: #fff; text-shadow: 0 0 5px #287233, 0 0 10px #287233, 0 0 20px #287233, 0 0 40px #287233; }
         }
 
+        .stDownloadButton {
+            display: flex !important;
+            justify-content: center !important
+        }
         </style>
         """,
         unsafe_allow_html=True
@@ -147,7 +159,12 @@ def main_page():    # if os.path.isfile('config.ini') or os.path.isfile('../conf
 
     # Inserire il titolo centrato
     st.markdown('<h2 class="centered-title title">🎉️ Cara Mara 🎉<br>questa volta il regalo va vinto</h2><h3 class="centered-title subtitle">- Trova il codice segreto per sbloccare il regalo -</h3>', unsafe_allow_html=True)
-
+    st.download_button(
+        label="Scarica le tue prove",
+        data=pdf_data,
+        file_name="tuo_file.pdf",
+        mime="application/pdf"
+    )
     c1, c2, c3 = st.columns(3)
     with c1:
         secret_code1 = st.text_input("Prima Prova")
@@ -158,6 +175,11 @@ def main_page():    # if os.path.isfile('config.ini') or os.path.isfile('../conf
 
     # c1, c2 = st.columns(2)
     # with c1:
+
+
+
+
+
     yt_download_button = st.button("Sblocca Regalo", key='download_button_youtube', use_container_width=True)
 
     if yt_download_button and secret_code1 == '2' and secret_code2 == '6' and  secret_code3 == '3':
