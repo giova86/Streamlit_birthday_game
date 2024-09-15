@@ -162,7 +162,7 @@ def main_page():    # if os.path.isfile('config.ini') or os.path.isfile('../conf
     st.download_button(
         label="Scarica le tue prove",
         data=pdf_data,
-        file_name="tuo_file.pdf",
+        file_name="Prove.pdf",
         mime="application/pdf"
     )
     c1, c2, c3 = st.columns(3)
